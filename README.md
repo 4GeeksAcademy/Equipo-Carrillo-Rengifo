@@ -150,7 +150,7 @@ La validación completa está **pendiente**. Las herramientas y comprobaciones p
 
 El criterio del proyecto exige un rendimiento mínimo de **80 puntos en PageSpeed Insights** y recomienda superar 90; se adjunta una captura `pagespeed-result.png` en los recursos verificados.
 
-**Evidencia PageSpeed Insights:** `pagespeed-result.png`.
+**Evidencia PageSpeed Insights:** `verificar carpeta /pagespeed-insights`.
 
 ## Recursos fotográficos
 
