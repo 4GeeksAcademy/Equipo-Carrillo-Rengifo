@@ -162,8 +162,9 @@ El criterio del proyecto exige un rendimiento mínimo de **80 puntos en PageSpee
 - **Institución:** 4Geeks Academy.
 - **Programa:** AI Engineering.
 - **Modalidad:** proyecto colaborativo.
-- **Desarrollador:** Joaquín Rengifo - integrante del equipo responsable de Catálogo, vista de producto, carrito.
-- **Colaboradora:** Carla Carrillo -  integrante del equipo responsable de Home y Checkout.
+- **Desarrolladores:**
+  Joaquín Rengifo - integrante del equipo responsable de Catálogo, vista de producto, carrito.
+  Carla Carrillo -  integrante del equipo responsable de Home y Checkout.
 
 
 
