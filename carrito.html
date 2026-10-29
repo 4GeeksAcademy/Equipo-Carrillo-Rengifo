@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resumen estático de tres productos de ejemplo en el prototipo académico ATELIER. Importes e impuestos ilustrativos; no corresponde a una compra real.">
+    <title>Mi carrito | ATELIER — marca por confirmar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[var(--color-canvas)] font-sans text-[var(--color-ink)] antialiased">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-[var(--color-surface)] focus:px-4 focus:py-3 focus:text-[var(--color-ink)] focus:outline-2 focus:outline-[var(--color-accent)]" href="#contenido">Saltar al contenido</a>
+
+    <header class="border-b border-[var(--color-line)] bg-[var(--color-canvas)]">
+      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-x-8 gap-y-3 py-4 sm:grid-cols-[1fr_auto] lg:grid-cols-[1fr_minmax(14rem,22rem)_1fr] lg:py-5">
+          <a class="justify-self-start font-serif text-lg tracking-[0.12em] text-[var(--color-ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] sm:text-xl" href="index.html" aria-label="ATELIER, marca por confirmar — Inicio">ATELIER <span class="font-sans text-[0.6rem] tracking-normal text-[var(--color-ink-muted)]">— MARQUE À CONFIRMER</span></a>
+
+          <div class="w-full lg:justify-self-center">
+            <label class="mb-1 block text-xs text-[var(--color-ink-muted)]" for="site-search">Buscar <span class="sr-only">(demostración, no disponible)</span></label>
+            <input class="min-h-11 w-full cursor-not-allowed border border-[var(--color-line)] bg-[var(--color-surface)] px-3 text-sm text-[var(--color-ink-muted)] disabled:opacity-70" id="site-search" name="q" type="search" placeholder="Búsqueda no disponible" disabled aria-describedby="search-note">
+            <p class="sr-only" id="search-note">La búsqueda es demostrativa y no está disponible.</p>
+          </div>
+
+          <div class="flex items-center justify-start gap-5 text-sm sm:justify-self-end">
+            <span class="text-[var(--color-ink-muted)]">Cuenta (prototipo)</span>
+            <a class="inline-flex min-h-11 items-center font-medium text-[var(--color-accent)] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="carrito.html" aria-current="page">Carrito</a>
+          </div>
+        </div>
+        <nav class="border-t border-[var(--color-line)]" aria-label="Navegación principal">
+          <ul class="flex flex-wrap items-center gap-x-7 gap-y-1 py-2 text-sm">
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="index.html">Inicio</a></li>
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html">Catálogo</a></li>
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="producto.html">Producto de muestra</a></li>
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="checkout.html">Checkout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section class="border-b border-[var(--color-line)] py-9 sm:py-12 lg:py-14" aria-labelledby="cart-title">
+        <div class="grid gap-6 sm:grid-cols-[minmax(0,1fr)_minmax(15rem,0.58fr)] sm:items-end sm:gap-10">
+          <div>
+            <p class="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-ink-muted)]">Resumen de demostración · 3 artículos</p>
+            <h1 class="font-serif text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl lg:text-[3.5rem]" id="cart-title">Mi carrito</h1>
+          </div>
+          <p class="max-w-xl text-base leading-7 text-[var(--color-ink-muted)] sm:justify-self-end">Revisa una selección estática de productos de muestra antes de continuar al checkout del prototipo.</p>
+        </div>
+        <a class="mt-6 inline-flex min-h-11 items-center text-sm font-medium text-[var(--color-accent)] underline underline-offset-4 hover:text-[var(--color-accent-hover)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="catalogo.html">← Continuar explorando el catálogo</a>
+      </section>
+
+      <div class="grid items-start gap-8 py-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-12 lg:py-10 xl:grid-cols-[minmax(0,1fr)_22rem]">
+        <section aria-labelledby="items-title">
+          <div class="mb-5 flex flex-wrap items-baseline justify-between gap-2">
+            <h2 class="font-serif text-2xl text-[var(--color-ink)] sm:text-3xl" id="items-title">Artículos</h2>
+            <p class="text-sm text-[var(--color-ink-muted)]">3 líneas · cantidades de ejemplo</p>
+          </div>
+
+          <ul class="divide-y divide-[var(--color-line)] border-y border-[var(--color-line)]" aria-label="Productos del carrito de demostración">
+            <li class="py-5 sm:py-6">
+              <article class="grid min-w-0 grid-cols-[5rem_minmax(0,1fr)] gap-4 sm:grid-cols-[7rem_minmax(0,1fr)_auto] sm:gap-5">
+                <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]">
+                  <img class="h-full w-full object-cover" src="./assets/catalog/Camisa_de_lino_atelier-CAM-LIN-001.jpg" alt="Camisa de lino Atelier" width="2335" height="3500" loading="lazy" decoding="async">
+                </div>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-LIN-001</p>
+                  <h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa de lino Atelier</h3>
+                  <p class="mt-2 text-sm text-[var(--color-ink-muted)]">Precio unitario: <span class="font-medium text-[var(--color-ink)]">€&nbsp;89,00</span></p>
+                  <p class="mt-1 text-sm text-[var(--color-ink-muted)]">Cantidad de muestra: <span class="text-[var(--color-ink)]">1</span></p>
+                  <p class="mt-3 text-sm font-medium text-[var(--color-ink)] sm:hidden">Total de línea: €&nbsp;89,00</p>
+                </div>
+                <p class="col-start-2 self-start text-right text-sm font-medium text-[var(--color-ink)] sm:col-start-3 sm:row-start-1 sm:min-w-24">€&nbsp;89,00<span class="mt-1 block text-xs font-normal text-[var(--color-ink-muted)]">Total de línea</span></p>
+              </article>
+            </li>
+
+            <li class="py-5 sm:py-6">
+              <article class="grid min-w-0 grid-cols-[5rem_minmax(0,1fr)] gap-4 sm:grid-cols-[7rem_minmax(0,1fr)_auto] sm:gap-5">
+                <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]">
+                  <img class="h-full w-full object-cover" src="./assets/catalog/Pantalon_recto_epure-PAN-REC-002.jpg" alt="Pantalón recto Épure" width="2249" height="4000" loading="lazy" decoding="async">
+                </div>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-REC-002</p>
+                  <h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Pantalón recto Épure</h3>
+                  <p class="mt-2 text-sm text-[var(--color-ink-muted)]">Precio unitario: <span class="font-medium text-[var(--color-ink)]">€&nbsp;120,00</span></p>
+                  <p class="mt-1 text-sm text-[var(--color-ink-muted)]">Cantidad de muestra: <span class="text-[var(--color-ink)]">1</span></p>
+                  <p class="mt-3 text-sm font-medium text-[var(--color-ink)] sm:hidden">Total de línea: €&nbsp;120,00</p>
+                </div>
+                <p class="col-start-2 self-start text-right text-sm font-medium text-[var(--color-ink)] sm:col-start-3 sm:row-start-1 sm:min-w-24">€&nbsp;120,00<span class="mt-1 block text-xs font-normal text-[var(--color-ink-muted)]">Total de línea</span></p>
+              </article>
+            </li>
+
+            <li class="py-5 sm:py-6">
+              <article class="grid min-w-0 grid-cols-[5rem_minmax(0,1fr)] gap-4 sm:grid-cols-[7rem_minmax(0,1fr)_auto] sm:gap-5">
+                <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]">
+                  <img class="h-full w-full object-cover" src="./assets/catalog/Bolso_Le_Marche-ACC-BOL-003.jpg" alt="Bolso Le Marché" width="3508" height="4961" loading="lazy" decoding="async">
+                </div>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-BOL-003</p>
+                  <h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Bolso Le Marché</h3>
+                  <p class="mt-2 text-sm text-[var(--color-ink-muted)]">Precio unitario: <span class="font-medium text-[var(--color-ink)]">€&nbsp;31,00</span></p>
+                  <p class="mt-1 text-sm text-[var(--color-ink-muted)]">Cantidad de muestra: <span class="text-[var(--color-ink)]">1</span></p>
+                  <p class="mt-3 text-sm font-medium text-[var(--color-ink)] sm:hidden">Total de línea: €&nbsp;31,00</p>
+                </div>
+                <p class="col-start-2 self-start text-right text-sm font-medium text-[var(--color-ink)] sm:col-start-3 sm:row-start-1 sm:min-w-24">€&nbsp;31,00<span class="mt-1 block text-xs font-normal text-[var(--color-ink-muted)]">Total de línea</span></p>
+              </article>
+            </li>
+          </ul>
+          <p class="mt-4 text-sm leading-6 text-[var(--color-ink-muted)]">Las cantidades son valores fijos de esta demostración. No es posible cambiar artículos, cantidades ni persistir un carrito.</p>
+        </section>
+
+        <aside class="border border-[var(--color-line)] bg-[var(--color-surface)] p-5 sm:p-6 lg:sticky lg:top-6" aria-labelledby="summary-title">
+          <h2 class="font-serif text-2xl text-[var(--color-ink)]" id="summary-title">Resumen del pedido</h2>
+          <p class="mt-2 text-xs leading-5 text-[var(--color-ink-muted)]">Importes ilustrativos para el prototipo; tasa de ejemplo 20%, no es cotización fiscal.</p>
+          <dl class="mt-6 space-y-4 text-sm">
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-[var(--color-ink-muted)]">Subtotal</dt>
+              <dd class="font-medium text-[var(--color-ink)]">€&nbsp;240,00</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-[var(--color-ink-muted)]">Impuesto ilustrativo <span class="block text-xs">20% sobre € 240,00</span></dt>
+              <dd class="font-medium text-[var(--color-ink)]">€&nbsp;48,00</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4 border-t border-[var(--color-line)] pt-4">
+              <dt class="font-semibold text-[var(--color-ink)]">Total de muestra</dt>
+              <dd class="text-lg font-semibold text-[var(--color-ink)]">€&nbsp;288,00</dd>
+            </div>
+          </dl>
+          <a class="mt-6 inline-flex min-h-12 w-full items-center justify-center border border-[var(--color-accent)] bg-[var(--color-accent)] px-6 py-3 text-sm font-medium text-[var(--color-on-accent)] underline-offset-4 hover:bg-[var(--color-accent-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="checkout.html">Comprar <span class="sr-only"> — continuar al checkout del prototipo</span></a>
+          <p class="mt-3 text-xs leading-5 text-[var(--color-ink-muted)]">El enlace solo navega a la vista de checkout. No procesa pagos ni realiza una compra.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="border-t border-[var(--color-line)] bg-[var(--color-surface-muted)] text-[var(--color-ink)]">
+      <div class="mx-auto grid w-full max-w-7xl grid-cols-2 gap-x-6 gap-y-8 px-4 py-9 sm:px-6 md:grid-cols-4 md:gap-8 lg:px-8 lg:py-11">
+        <div class="col-span-2 md:col-span-1">
+          <a class="font-serif text-lg tracking-[0.12em] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="index.html">ATELIER <span class="font-sans text-[0.6rem] tracking-normal text-[var(--color-ink-muted)]">— MARQUE À CONFIRMER</span><span class="sr-only">; Inicio</span></a>
+          <p class="mt-3 max-w-xs text-sm leading-6 text-[var(--color-ink-muted)]">Prototipo académico. Identidad y contenido comercial pendientes de confirmación.</p>
+        </div>
+        <nav aria-label="Categorías del catálogo"><h2 class="text-sm font-semibold">Categorías</h2><ul class="mt-3 space-y-2 text-sm"><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html#cat-calzado">Calzado</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html#cat-camisas">Camisas</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html#cat-pantalones">Pantalones</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html#cat-accesorios">Accesorios</a></li></ul></nav>
+        <div><h2 class="text-sm font-semibold">Legal</h2><ul class="mt-3 space-y-2 text-sm leading-6 text-[var(--color-ink-muted)]"><li>Términos y condiciones — pendiente</li><li>Privacidad — pendiente</li><li>Sobre la marca — pendiente</li></ul></div>
+        <div><h2 class="text-sm font-semibold">Contacto</h2><p class="mt-3 text-sm leading-6 text-[var(--color-ink-muted)]">Información de contacto pendiente de confirmación.</p></div>
+      </div>
+      <div class="border-t border-[var(--color-line)] px-4 py-4 text-center text-xs text-[var(--color-ink-muted)]">© Prototipo académico · Sin operación comercial</div>
+    </footer>
+  </body>
+</html>
