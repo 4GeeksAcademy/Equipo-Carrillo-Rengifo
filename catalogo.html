@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo de demostración con veinte referencias editoriales para el prototipo académico ATELIER. Imágenes y datos comerciales pendientes de aprobación.">
+    <title>Catálogo | ATELIER — marca por confirmar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[var(--color-canvas)] font-sans text-[var(--color-ink)] antialiased">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-[var(--color-surface)] focus:px-4 focus:py-3 focus:text-[var(--color-ink)] focus:outline-2 focus:outline-[var(--color-accent)]" href="#contenido">Saltar al contenido</a>
+
+    <header class="border-b border-[var(--color-line)] bg-[var(--color-canvas)]">
+      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 items-center gap-x-8 gap-y-3 py-4 sm:grid-cols-[1fr_auto] lg:grid-cols-[1fr_minmax(14rem,22rem)_1fr] lg:py-5">
+          <a class="justify-self-start font-serif text-lg tracking-[0.12em] text-[var(--color-ink)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)] sm:text-xl" href="index.html" aria-label="ATELIER, marca por confirmar — Inicio">ATELIER <span class="font-sans text-[0.6rem] tracking-normal text-[var(--color-ink-muted)]">— MARQUE À CONFIRMER</span></a>
+
+          <div class="w-full lg:justify-self-center">
+            <label class="mb-1 block text-xs text-[var(--color-ink-muted)]" for="site-search">Buscar <span class="sr-only">(demostración, no disponible)</span></label>
+            <input class="min-h-11 w-full cursor-not-allowed border border-[var(--color-line)] bg-[var(--color-surface)] px-3 text-sm text-[var(--color-ink-muted)] disabled:opacity-70" id="site-search" name="q" type="search" placeholder="Búsqueda no disponible" disabled aria-describedby="search-note">
+            <p class="sr-only" id="search-note">La búsqueda es demostrativa y no está disponible.</p>
+          </div>
+
+          <div class="flex items-center justify-start gap-5 text-sm sm:justify-self-end">
+            <span class="text-[var(--color-ink-muted)]">Cuenta (prototipo)</span>
+            <a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="carrito.html">Carrito</a>
+          </div>
+        </div>
+        <nav class="border-t border-[var(--color-line)]" aria-label="Navegación principal">
+          <ul class="flex flex-wrap items-center gap-x-7 gap-y-1 py-2 text-sm">
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="index.html">Inicio</a></li>
+            <li><a class="inline-flex min-h-11 items-center font-medium text-[var(--color-accent)] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="catalogo.html" aria-current="page">Catálogo</a></li>
+            <li><a class="inline-flex min-h-11 items-center underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="producto.html">Producto de muestra</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section class="border-b border-[var(--color-line)] py-9 sm:py-12 lg:py-14" aria-labelledby="catalog-title">
+        <div class="grid gap-6 sm:grid-cols-[minmax(0,1fr)_minmax(15rem,0.58fr)] sm:items-end sm:gap-10">
+          <div>
+            <p class="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-ink-muted)]">Colección de demostración · 20 referencias</p>
+            <h1 class="font-serif text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl lg:text-[3.5rem]" id="catalog-title">Catálogo</h1>
+          </div>
+          <div class="max-w-xl sm:justify-self-end">
+            <p class="text-base leading-7 text-[var(--color-ink-muted)]">Una selección editorial de prendas y accesorios para explorar este prototipo académico.</p>
+            <p class="mt-2 text-sm leading-6 text-[var(--color-ink-muted)]">Nombres, precios e imágenes son ilustrativos; no representan un catálogo comercial real. Identidad de marca pendiente de confirmación.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-7 sm:py-8" aria-labelledby="filters-title">
+        <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-serif text-2xl text-[var(--color-ink)]" id="filters-title">Explorar la selección</h2>
+            <p class="mt-1 text-sm text-[var(--color-ink-muted)]" id="filter-note">Controles de demostración; no filtran los productos.</p>
+          </div>
+          <p class="text-sm text-[var(--color-ink-muted)]">20 artículos · precios de muestra en EUR</p>
+        </div>
+        <fieldset class="grid grid-cols-1 gap-4 border border-[var(--color-line)] bg-[var(--color-surface-muted)] p-4 sm:grid-cols-2 sm:gap-5 sm:p-5" aria-describedby="filter-note">
+          <legend class="sr-only">Filtros de demostración</legend>
+          <div>
+            <label class="mb-2 block text-sm font-medium" for="category-filter">Categoría</label>
+            <select class="min-h-11 w-full border border-[var(--color-line)] bg-[var(--color-surface)] px-3 text-[var(--color-ink)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)] disabled:cursor-not-allowed disabled:opacity-70" id="category-filter" name="category" disabled>
+              <option value="all" selected>Todas las categorías</option>
+              <option value="calzado">Calzado</option>
+              <option value="camisas">Camisas</option>
+              <option value="pantalones">Pantalones</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+          </div>
+          <div>
+            <label class="mb-2 block text-sm font-medium" for="size-filter">Talla</label>
+            <select class="min-h-11 w-full border border-[var(--color-line)] bg-[var(--color-surface)] px-3 text-[var(--color-ink)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)] disabled:cursor-not-allowed disabled:opacity-70" id="size-filter" name="size" disabled>
+              <option value="all" selected>Todas las tallas</option>
+              <optgroup label="Textil — tallas de muestra"><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></optgroup>
+              <optgroup label="Calzado — tallas EU de muestra"><option>EU 36</option><option>EU 37</option><option>EU 38</option><option>EU 39</option><option>EU 40</option><option>EU 41</option><option>EU 42</option><option>EU 43</option><option>EU 44</option><option>EU 45</option><option>EU 46</option></optgroup>
+            </select>
+          </div>
+        </fieldset>
+      </section>
+
+      <section aria-labelledby="products-title">
+        <div class="mb-5 flex flex-col gap-2 sm:mb-6 sm:flex-row sm:items-baseline sm:justify-between">
+          <h2 class="font-serif text-2xl text-[var(--color-ink)] sm:text-3xl" id="products-title">Selección editorial</h2>
+          <p class="text-sm text-[var(--color-ink-muted)]">20 referencias de muestra</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+          <article class="min-w-0" id="cat-camisas">
+            <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Camisa_de_lino_atelier-CAM-LIN-001.jpg" alt="Camisa de lino Atelier" width="2335" height="3500" loading="lazy" decoding="async"></div>
+            <div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-LIN-001</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa de lino Atelier</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;89,00</p><a class="mt-2 inline-flex min-h-11 items-center text-sm font-medium text-[var(--color-accent)] underline underline-offset-4 hover:text-[var(--color-accent-hover)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="producto.html">Ver producto <span class="sr-only">Camisa de lino Atelier, CAM-LIN-001</span></a></div>
+          </article>
+          <article class="min-w-0" id="cat-pantalones">
+            <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Pantalon_recto_epure-PAN-REC-002.jpg" alt="Pantalón recto Épure" width="2249" height="4000" loading="lazy" decoding="async"></div>
+            <div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-REC-002</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Pantalón recto Épure</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;120,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div>
+          </article>
+          <article class="min-w-0" id="cat-accesorios">
+            <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Bolso_Le_Marche-ACC-BOL-003.jpg" alt="Bolso Le Marché" width="3508" height="4961" loading="lazy" decoding="async"></div>
+            <div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-BOL-003</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Bolso Le Marché</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;31,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div>
+          </article>
+          <article class="min-w-0" id="cat-calzado">
+            <div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Zapato_Derby_Rivage-CAL-ZAP-004.jpg" alt="Zapato Derby Rivage" width="4500" height="5625" loading="lazy" decoding="async"></div>
+            <div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Calzado · CAL-ZAP-004</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Zapato Derby Rivage</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;145,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div>
+          </article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Camisa_Popeline_Rue-CAM-POP-005.jpg" alt="Camisa Popeline Rue" width="3697" height="5546" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-POP-005</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa Popeline Rue</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;79,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Camisa_oversize_Ligne-CAM-OVR-006.jpg" alt="Camisa oversize Ligne" width="3240" height="4854" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-OVR-006</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa oversize Ligne</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;95,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Camisa_satinada_Nuit-CAM-SAT-007.jpg" alt="Camisa satinada Nuit" width="3981" height="5972" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-SAT-007</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa satinada Nuit</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;110,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Camisa_a_rayas_Côte-CAM-STR-008.jpg" alt="Camisa a rayas Côte" width="4472" height="7952" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Camisas · CAM-STR-008</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Camisa a rayas Côte</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;85,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Pantalon_plisado_ Forme-PAN-PLI-009.jpg" alt="Pantalón plisado Forme" width="3376" height="6000" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-PLI-009</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Pantalón plisado Forme</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;130,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Pantalon_amplio_sable-PAN-LAR-010.jpg" alt="Pantalón amplio Sable" width="4088" height="5451" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-LAR-010</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Pantalón amplio Sable</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;115,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Jean_recto_Bleu- PAN-DEN-011.jpg" alt="Jean recto Bleu" width="4653" height="6980" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-DEN-011</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Jean recto Bleu</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;99,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Chino_ligero Jardin-PAN-CHI-012.jpg" alt="Chino ligero Jardin" width="3456" height="5184" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Pantalones · PAN-CHI-012</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Chino ligero Jardin</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;92,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Cinturon_de_cuero_Ligne-ACC-CEI-013.jpg" alt="Cinturón de cuero Ligne" width="2624" height="3936" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-CEI-013</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Cinturón de cuero Ligne</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;65,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Panuelo_de_seda_Fleur-ACC-FOU-014.jpg" alt="Pañuelo de seda Fleur" width="3147" height="4720" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-FOU-014</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Pañuelo de seda Fleur</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;55,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Cartera_compacta_Port-ACC-POR-015.jpg" alt="Cartera compacta Port" width="6038" height="4160" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-POR-015</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Cartera compacta Port</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;49,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Bolso_bandolera_Minuit-ACC-SAC-016.jpg" alt="Bolso bandolera Minuit" width="2160" height="2899" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Accesorios · ACC-SAC-016</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Bolso bandolera Minuit</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;135,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Mocasin_Celeste-CAL-MOC-017.jpg" alt="Mocasín Céleste" width="2160" height="2160" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Calzado · CAL-MOC-017</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Mocasín Céleste</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;155,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Bailarina_Aube-CAL-BAL-018.jpg" alt="Bailarina Aube" width="4000" height="6000" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Calzado · CAL-BAL-018</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Bailarina Aube</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;125,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Bota_corta_Atelier-CAL-BOT-019.jpg" alt="Bota corta Atelier" width="2160" height="3840" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Calzado · CAL-BOT-019</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Bota corta Atelier</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;189,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+          <article class="min-w-0"><div class="aspect-[4/5] overflow-hidden bg-[var(--color-surface-muted)]"><img class="h-full w-full object-cover" src="./assets/catalog/Sandalia_Riviera-CAL-SAN-020.jpg" alt="Sandalia Riviera" width="4000" height="6000" loading="lazy" decoding="async"></div><div class="pt-3"><p class="text-xs uppercase tracking-[0.1em] text-[var(--color-ink-muted)]">Calzado · CAL-SAN-020</p><h3 class="mt-1.5 font-serif text-lg leading-snug text-[var(--color-ink)] sm:text-xl">Sandalia Riviera</h3><p class="mt-1.5 text-base font-medium text-[var(--color-ink)]">€&nbsp;105,00</p><p class="mt-2 min-h-11 text-sm leading-6 text-[var(--color-ink-muted)]">Tarjeta informativa; ficha individual pendiente.</p></div></article>
+        </div>
+        <p class="mt-7 border-t border-[var(--color-line)] pt-4 text-sm leading-6 text-[var(--color-ink-muted)]">Las fotografías disponibles en el repositorio no se muestran: su correspondencia con los SKU, autoría y permisos no están verificados. Las 20 referencias requieren fotografías diferenciadas con uso autorizado antes de considerar completo el catálogo.</p>
+      </section>
+    </main>
+
+    <footer class="border-t border-[var(--color-line)] bg-[var(--color-surface-muted)] text-[var(--color-ink)]">
+      <div class="mx-auto grid w-full max-w-7xl grid-cols-2 gap-x-6 gap-y-8 px-4 py-9 sm:px-6 md:grid-cols-4 md:gap-8 lg:px-8 lg:py-11">
+        <div class="col-span-2 md:col-span-1">
+          <a class="font-serif text-lg tracking-[0.12em] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href="index.html">ATELIER <span class="font-sans text-[0.6rem] tracking-normal text-[var(--color-ink-muted)]">— MARQUE À CONFIRMER</span><span class="sr-only">; Inicio</span></a>
+          <p class="mt-3 max-w-xs text-sm leading-6 text-[var(--color-ink-muted)]">Prototipo académico. Identidad y contenido comercial pendientes de confirmación.</p>
+        </div>
+        <nav aria-label="Categorías del catálogo"><h2 class="text-sm font-semibold">Categorías</h2><ul class="mt-3 space-y-2 text-sm"><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="#cat-calzado">Calzado</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="#cat-camisas">Camisas</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="#cat-pantalones">Pantalones</a></li><li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]" href="#cat-accesorios">Accesorios</a></li></ul></nav>
+        <div><h2 class="text-sm font-semibold">Legal</h2><ul class="mt-3 space-y-2 text-sm leading-6 text-[var(--color-ink-muted)]"><li>Términos y condiciones — pendiente</li><li>Privacidad — pendiente</li><li>Sobre la marca — pendiente</li></ul></div>
+        <div><h2 class="text-sm font-semibold">Contacto</h2><p class="mt-3 text-sm leading-6 text-[var(--color-ink-muted)]">Información de contacto pendiente de confirmación.</p></div>
+      </div>
+      <div class="border-t border-[var(--color-line)] px-4 py-4 text-center text-xs text-[var(--color-ink-muted)]">© Prototipo académico · Sin operación comercial</div>
+    </footer>
+  </body>
+</html>
