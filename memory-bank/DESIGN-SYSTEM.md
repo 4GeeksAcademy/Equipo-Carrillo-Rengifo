@@ -1,6 +1,6 @@
-# Sistema de diseño propuesto
+# Sistema de diseño del prototipo
 
-> Estado: propuesta para aprobar antes del desarrollo paralelo. No constituye identidad oficial del cliente.
+> Estado: aprobado para el prototipo académico; no constituye identidad oficial del cliente ni aprobación de catálogo, imágenes o afirmaciones comerciales.
 
 ## Dirección visual
 E-commerce editorial premium: fondos cálidos, grafito para lectura, borgoña como acento limitado, composición sobria y fotografía de moda consistente. No asignar una paleta distinta a cada vista.
@@ -21,10 +21,10 @@ E-commerce editorial premium: fondos cálidos, grafito para lectura, borgoña co
 | `--color-success` | `#315B45` | Confirmación visual no transaccional |
 | `--color-error` | `#A12D2D` | Errores de formulario |
 
-Estos valores deben revisarse con una herramienta de contraste sobre combinaciones reales antes de aprobarse. No son garantía automática de conformidad.
+Estos valores y la dirección visual están aprobados para el prototipo. La aprobación no certifica contraste ni conformidad: deben comprobarse las combinaciones reales mediante pruebas de accesibilidad.
 
 ## Fuente de verdad y carga
-Método compatible con la plantilla actual: CDN oficial `@tailwindcss/browser@4` descrito en `README.es.md` y una sola hoja común `styles.css` con las variables CSS de este documento y solo las reglas globales estrictamente necesarias. Las páginas enlazan esa misma hoja; sus clases Tailwind consumen variables (por ejemplo `bg-[var(--color-canvas)]`, `text-[var(--color-ink)]`, `border-[var(--color-line)]`). No repetir hexadecimales en HTML ni crear paletas locales. Comprobar el comportamiento de compilación de utilidades variables en el navegador con CDN en una prueba técnica previa. No introducir `@theme`/build tooling sin validar compatibilidad y aprobación.
+Las páginas integradas usan el CDN de navegador `@tailwindcss/browser@4` y clases utility Tailwind, incluidas utilidades responsive. Algunas consumen variables `--color-*` cuya definición común no se ha localizado en el repositorio. Mantener el uso coherente de Tailwind y breakpoints responsive; la elección de una hoja `styles.css` no es un requisito del proyecto. No introducir build tooling ni dependencias sin acuerdo.
 
 ## Tipografía
 - Titulares editoriales: `Georgia, 'Times New Roman', serif` (`font-serif`), peso regular; alternativa local, sin descarga externa.

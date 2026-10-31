@@ -1,21 +1,21 @@
 # ATELIER — E-commerce de Moda
 
-ATELIER es un prototipo académico de comercio electrónico para una marca francesa de moda, desarrollado de forma colaborativa en el programa **AI Engineering de 4Geeks Academy**. La propuesta explora una experiencia editorial de moda y una estructura de cinco vistas; el repositorio todavía contiene una integración parcial y no es una tienda operativa.
+ATELIER es un prototipo académico de comercio electrónico para una marca francesa de moda, desarrollado de forma colaborativa en el programa **AI Engineering de 4Geeks Academy**. La propuesta explora una experiencia editorial de moda en cinco vistas HTML; no es una tienda operativa.
 
 Los objetivos del proyecto son establecer un diseño moderno y consistente, facilitar la navegación entre vistas, adaptar la interfaz a móvil, tablet y escritorio, atender criterios de accesibilidad y SEO técnico —incluido Schema.org solo cuando corresponda— y practicar el desarrollo colaborativo con Git y GitHub.
 
-> **Estado actual:** está integrado `catalogo.html`. `checkout.html` es una página temporal para pruebas locales, no la vista final. `index.html`, `producto.html` y `carrito.html` no están integrados. La arquitectura y el sistema visual de `memory-bank/` se registran como propuestas pendientes de aprobación.
+> **Estado actual:** `index.html`, `catalogo.html`, `producto.html`, `carrito.html` y `checkout.html` están presentes en `main` tras integrar la Home (PR #6). Las cinco vistas y la navegación estática existen; esto no significa que todas las pruebas de aceptación se hayan ejecutado ni que los datos de ejemplo o derechos de imágenes estén aprobados. El sistema visual conceptual se aprobó para el prototipo; la identidad corporativa sigue sin confirmarse.
 
 ## Tecnologías y enfoque
 
 - **HTML5 semántico** para las páginas estáticas.
-- **Tailwind CSS v4 mediante CDN de navegador**, sin proceso de compilación. El catálogo usa esta integración:
+- **Tailwind CSS v4 mediante CDN de navegador**, sin proceso de compilación. Las páginas usan esta integración:
 
   ```html
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   ```
 
-  La página temporal de checkout no carga Tailwind. La integración común de las vistas sigue pendiente.
+   Las vistas usan utilidades Tailwind y referencias a tokens `--color-*`; no existe una hoja `styles.css` común. No se ha verificado en esta actualización la apariencia de cada vista en navegador.
 - **Git y GitHub** para control de versiones y colaboración; **GitHub Codespaces** como entorno posible de trabajo.
 - El repositorio no contiene actualmente una hoja `styles.css` ni una implementación con React, Vue o JavaScript personalizado. No se requiere `npm install` para servir las páginas estáticas.
 
@@ -25,13 +25,13 @@ Las siguientes descripciones recogen el alcance documentado en `specs/`. Solo se
 
 | Vista | Alcance previsto | Estado comprobado |
 |---|---|---|
-| **Home — `index.html`** | Navbar y footer compartidos, hero de campaña, nuevos lanzamientos y selección editorial de más vendidos. | **Pendiente de integración.** La especificación existe; no hay `index.html`. |
-| **Catálogo — `catalogo.html`** | 20 referencias, filtros visuales de categoría y talla, cuadrícula adaptable, fotografías y enlace a una ficha de muestra. | **Integrado parcialmente.** Hay 20 tarjetas y filtros deshabilitados que se identifican como demostrativos. Solo la primera tarjeta enlaza a `producto.html`; la ficha aún no existe. El HTML referencia imágenes locales, pero su origen y permisos no están verificados. |
-| **Producto — `producto.html`** | Foto principal, nombre, SKU, precio, selector de talla y cantidad, acción visual para el carrito, descripción, materiales y uso recomendado. | **Pendiente de integración.** Está especificada como ficha de muestra; no hay archivo HTML. |
-| **Carrito — `carrito.html`** | Tres productos de ejemplo con miniaturas, precios, cantidades, totales por línea, subtotal, impuesto ilustrativo y total; acceso al checkout. | **Pendiente de integración.** La especificación propone un subtotal de **€240,00**, impuesto de ejemplo del 20 % (**€48,00**) y total de **€288,00**. Estos valores son ejemplos documentados, no datos de una vista integrada. |
-| **Checkout — `checkout.html`** | Datos personales y de entrega, sección de pago con tarjeta solo ilustrativa y diseño adaptable. | **Existe solo como archivo temporal de pruebas.** Muestra tres secciones estáticas y advierte que no se introduzcan datos de tarjeta. No es el checkout completo especificado y actualmente enlaza a rutas que no están integradas. |
+| **Home — `index.html`** | Hero editorial, lanzamientos, selección de muestra y navegación compartida. | **Integrada en `main` (PR #6).** Es contenido estático; la identidad y los productos son provisionales/de muestra. |
+| **Catálogo — `catalogo.html`** | 20 referencias, filtros de demostración y cuadrícula adaptable. | **Integrado en `main`.** Los controles no filtran. Referencia imágenes locales cuyo origen y permisos no están verificados. |
+| **Producto — `producto.html`** | Ficha de producto de muestra, atributos y controles visuales. | **Integrada en `main`.** No añade al carrito ni realiza operaciones. |
+| **Carrito — `carrito.html`** | Tres productos de ejemplo, importes estáticos y acceso al checkout. | **Integrado en `main`.** Subtotal de muestra **€240,00**, impuesto ilustrativo **€48,00** y total **€288,00**; no es una orden real ni cálculo dinámico. |
+| **Checkout — `checkout.html`** | Tres pasos visuales, campos de muestra y nota de prototipo. | **Integrado en `main` como checkout estático.** No procesa pagos ni debe recibir datos reales de tarjeta. |
 
-La navegación completa entre las cinco vistas no está disponible mientras falten las páginas indicadas. Las rutas y componentes compartidos se describen como propuestas en las especificaciones del proyecto.
+Las cinco vistas tienen navegación HTML estática. La presencia de los destinos no demuestra por sí sola que cada enlace, ancla o flujo haya pasado una comprobación integral. Las especificaciones siguen siendo referencia de alcance y aceptación; no se deben interpretar sus casillas sin marcar como validaciones completadas.
 
 ## Limitaciones funcionales
 
@@ -44,7 +44,7 @@ El proyecto es una maqueta estática en HTML y Tailwind CSS. En particular:
 
 ## Sistema visual
 
-`memory-bank/DESIGN-SYSTEM.md` define una dirección editorial cálida y minimalista, **todavía propuesta y pendiente de aprobación**. La paleta documentada es:
+`memory-bank/DESIGN-SYSTEM.md` documenta la dirección editorial cálida y minimalista **aprobada para este prototipo**; no es una identidad corporativa confirmada. La paleta documentada es:
 
 | Uso | Color |
 |---|---|
@@ -57,13 +57,13 @@ El proyecto es una maqueta estática en HTML y Tailwind CSS. En particular:
 | Borgoña | `#6E1F32` |
 | Hover borgoña | `#551727` |
 
-La tipografía propuesta es **Georgia / Times New Roman** para títulos y **Arial / Helvetica** para textos e interfaz, utilizando fuentes locales. La especificación recomienda mantener la uniformidad mediante `AGENTS.md`, Memory Bank, reglas, vistas de `specs/` y contratos de componentes compartidos. No existe todavía una hoja CSS común implementada.
+La tipografía definida para el prototipo es **Georgia / Times New Roman** para títulos y **Arial / Helvetica** para textos e interfaz, utilizando fuentes locales. El HTML usa clases Tailwind que consumen variables CSS `--color-*`; no se encontró una hoja CSS común que defina esos tokens. Este hecho técnico no altera el requisito de utilizar Tailwind CSS de manera coherente, con clases utility y breakpoints responsive, ni implica que se deba crear `styles.css` en esta actualización documental.
 
 ## Diseño adaptable, semántica y SEO
 
 Las reglas y especificaciones plantean un enfoque **mobile-first**, con utilidades responsive de Tailwind para adaptar navegación, rejillas, imágenes y formularios entre móvil, tablet y escritorio. Los anchos de referencia para futuras comprobaciones son 320, 375, 768, 1024 y 1440 px. No se afirma que esas pruebas se hayan realizado.
 
-Las reglas del proyecto solicitan HTML semántico, jerarquía coherente de encabezados, `title` y `description` por página, textos alternativos para imágenes, etiquetas asociadas a campos, navegación por teclado y foco visible. El catálogo actual incluye metadatos, textos `alt`, etiquetas de formulario y estados de foco en sus clases; esto no equivale a una auditoría completa de accesibilidad. `checkout.html` contiene metadatos básicos, pero es temporal. **No se encontró marcado Schema.org/JSON-LD en los HTML inspeccionados**, y no se han registrado validaciones W3C ni puntuaciones Lighthouse.
+Las reglas del proyecto solicitan HTML semántico, jerarquía coherente de encabezados, `title` y `description` por página, textos alternativos para imágenes, etiquetas asociadas a campos, navegación por teclado y foco visible. La existencia de estas características en el código no equivale a una auditoría completa de accesibilidad. **No se ha registrado evidencia de validación W3C, auditoría completa de teclado/responsive ni puntuaciones Lighthouse/PSI en esta actualización.** No se encontró marcado Schema.org/JSON-LD en los HTML inspeccionados.
 
 ## Estructura actual del repositorio
 
@@ -73,8 +73,11 @@ Las reglas del proyecto solicitan HTML semántico, jerarquía coherente de encab
 .
 ├── AGENTS.md
 ├── README.md
+├── index.html                    # Home
 ├── catalogo.html
-├── checkout.html                 # temporal; no es la vista final
+├── producto.html
+├── carrito.html
+├── checkout.html                 # prototipo estático
 ├── server.py                     # servidor Flask de la plantilla original
 ├── learn.json                    # metadatos de la plantilla original
 ├── assets/
@@ -105,7 +108,7 @@ Las reglas del proyecto solicitan HTML semántico, jerarquía coherente de encab
     └── shared-components.md
 ```
 
-No se muestran `index.html`, `producto.html` ni `carrito.html` porque no existen actualmente en la raíz.
+Las cinco páginas HTML están en la raíz y versionadas.
 
 ## Instalación y ejecución local
 
@@ -124,14 +127,14 @@ No hay paso de compilación para las páginas estáticas. Para probar el conteni
    python3 -m http.server 8000
    ```
 
-3. Abre `http://localhost:8000/catalogo.html` para ver el catálogo actual o `http://localhost:8000/checkout.html` para la página temporal.
-4. Cuando Home, Producto y Carrito estén integrados, se podrá abrir `index.html` y probar el recorrido completo de las cinco vistas.
+3. Abre `http://localhost:8000/index.html` para Home o `http://localhost:8000/catalogo.html` para el catálogo. También están disponibles `producto.html`, `carrito.html` y el checkout estático `checkout.html`.
+4. Recorre los enlaces para una comprobación manual inicial; esta instrucción no constituye evidencia de pruebas ya realizadas.
 
 La integración CDN de Tailwind requiere conexión a internet. El `server.py` heredado de la plantilla utiliza Flask, pero no es necesario para el servidor estático recomendado arriba.
 
 ## Desarrollo colaborativo
 
-La distribución indicada para el proyecto es:
+La distribución registrada para el proyecto es:
 
 - **Desarrollador 1 — Joaquín Rengifo:** catálogo, vista de producto y carrito.
 - **Desarrolladora 2 — integrante del equipo:** Home y Checkout. Su nombre no está consignado en la documentación disponible.
@@ -140,7 +143,7 @@ El flujo documentado contempla ramas `feature` por vista, commits descriptivos, 
 
 ## Pruebas y validación
 
-La validación completa está **pendiente**. Las herramientas y comprobaciones previstas son:
+La validación completa está **pendiente de evidencia registrada**. Las herramientas y comprobaciones previstas son:
 
 - **W3C Nu Validator:** validar cada documento HTML.
 - **Schema Markup Validator:** revisar JSON-LD únicamente en páginas donde se incorpore.
@@ -150,7 +153,7 @@ La validación completa está **pendiente**. Las herramientas y comprobaciones p
 
 El criterio del proyecto exige un rendimiento mínimo de **80 puntos en PageSpeed Insights** y recomienda superar 90; se adjunta una captura `pagespeed-result.png` en los recursos verificados.
 
-**Evidencia PageSpeed Insights:** `verificar carpeta /pagespeed-insights`.
+**Evidencia PageSpeed Insights:** revisar `/pagespeed-insights`; no declarar puntuación hasta localizar y verificar un informe con URL y fecha.
 
 ## Recursos fotográficos
 

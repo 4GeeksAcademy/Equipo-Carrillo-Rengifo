@@ -1,6 +1,6 @@
 # SPEC 01 — Home (`index.html`)
 
-> Ruta propuesta, pendiente de aprobación. Prototipo estático; aplicar `AGENTS.md`, reglas y contrato `shared-components.md`.
+> Vista integrada en `main` mediante PR #6. Esta especificación define el alcance esperado; sus criterios de aceptación siguen sujetos a comprobación. Prototipo estático; aplicar `AGENTS.md`, reglas y contrato `shared-components.md`.
 
 ## Objetivo
 Presentar la dirección editorial de la tienda y permitir acceso claro a catálogo y categorías.
@@ -9,7 +9,7 @@ Presentar la dirección editorial de la tienda y permitir acceso claro a catálo
 `header`/navbar compartida, `main` con un único `h1` dentro del hero, secciones de novedades y más vendidos, `footer` compartido. Un orden lógico, semántico y navegable.
 
 ## Componentes obligatorios
-- Navbar canónica con logo conceptual aprobado, búsqueda no funcional, acceso de cuenta y rutas comunes.
+- Navbar con marca provisional y no oficial, búsqueda no funcional, acceso de cuenta y rutas comunes.
 - Hero de campaña con imagen autorizada, título, breve copy y enlace real a `catalogo.html`.
 - Nuevos lanzamientos y Más vendidos, cada uno con cards horizontales en desktop (scroll por teclado/gesto solo si se conserva acceso; preferir rejilla adaptable y evitar carrusel sin JS).
 - Footer canónico.

@@ -1,6 +1,6 @@
 # SPEC 02 — Catálogo (`catalogo.html`)
 
-> Ruta propuesta, pendiente de aprobación. Filtros y catálogo son visuales; no filtran resultados.
+> `catalogo.html` está integrado en `main`. Filtros y catálogo son visuales; no filtran resultados. Esta SPEC no declara completados sus criterios de aceptación.
 
 ## Objetivo
 Permitir explorar visualmente la colección de muestra de forma consistente y adaptable.
@@ -11,10 +11,10 @@ Navbar, `main` con breadcrumb opcional, h1, introducción breve, controles de fi
 ## Componentes obligatorios
 - Navbar/footer y filtros visuales por categoría y talla.
 - Rejilla de exactamente 20 productos de referencia; en escritorio ancho: 4 columnas x 5 filas.
-- Cards compartidas, con enlace a `producto.html` (se puede mostrar un único producto de detalle como muestra; documentar que no hay 20 páginas de detalle individuales).
+- Cards con enlace a la ficha de muestra `producto.html`; no hay 20 páginas de detalle individuales.
 
 ## Contenido mínimo
-Veinte registros de `shared-components.md`, cada uno con imagen autorizada, alt, nombre, SKU visible o disponible en detalle, precio EUR y categoría. Valores de filtros deben corresponder a la taxonomía común. Sin etiquetas de stock/discount no confirmadas.
+Veinte registros de `shared-components.md`, cada uno con imagen local, alt, nombre, SKU visible o disponible en detalle, precio EUR y categoría. El uso autorizado de imágenes requiere verificación independiente. Valores de filtros deben corresponder a la taxonomía común. Sin etiquetas de stock/discount no confirmadas.
 
 ## Elementos compartidos
 Todos los descritos en `shared-components.md`; precios, SKU y taxonomía idénticos en todas las vistas.

@@ -1,19 +1,19 @@
 # Proyecto
 
-> Estado: fundación documental propuesta; pendiente de revisión y aprobación del equipo. Fecha de elaboración: 2026-10-29.
+> Estado: cinco vistas integradas en `main`. Dirección visual aprobada para el prototipo; identidad comercial, permisos de imágenes y validación integral conservan estados independientes. Actualizado: 2026-10-31.
 
 ## Objetivo
-Definir una base común y construir, en una fase posterior, un prototipo estático y navegable de e-commerce de moda para el ejercicio colaborativo de 4Geeks Academy — AI Engineering.
+Mantener un prototipo estático y navegable de e-commerce de moda para el ejercicio colaborativo de 4Geeks Academy — AI Engineering.
 
 ## Contexto del cliente
-El briefing describe una marca reconocida de ropa con sede en Francia, pero no da nombre, dominio, identidad oficial ni datos corporativos. La documentación propone una dirección visual conceptual premium/editorial; no es una afirmación sobre la marca real.
+El briefing describe una marca reconocida de ropa con sede en Francia, pero no da nombre, dominio, identidad oficial ni datos corporativos. La dirección visual conceptual premium/editorial aprobada para el prototipo no es una afirmación sobre la marca real.
 
 ## Alcance académico
-Cinco vistas en HTML estático: Home, Catálogo, Producto, Carrito y Checkout. Las rutas iniciales están en `specs/` y requieren aprobación. El flujo es una demostración visual navegable, no una tienda operativa.
+Cinco vistas HTML estáticas —Home, Catálogo, Producto, Carrito y Checkout— integradas en `main`. El flujo es una demostración visual navegable, no una tienda operativa.
 
 ## Requisitos técnicos
-- HTML5 semántico y Tailwind CSS v4 exclusivamente, con método de carga aprobado; se propone el CDN oficial de navegador ya descrito por la plantilla.
-- CSS mínimo y justificado. Git/GitHub para trabajo por ramas y PR.
+- HTML5 semántico y Tailwind CSS v4 mediante CDN de navegador, con clases utility coherentes y responsive.
+- Git/GitHub para trabajo por ramas y PR. No se establece una hoja `styles.css` como requisito.
 - No React/Vue/Angular/Next/Bootstrap/jQuery/TypeScript, JavaScript personalizado, backend, APIs, pasarelas reales ni dependencias contradictorias.
 - Checkout, filtros, búsqueda y carrito son estáticos: no filtran, calculan, persisten, procesan ni envían operaciones reales.
 
@@ -24,8 +24,8 @@ Cinco vistas en HTML estático: Home, Catálogo, Producto, Carrito y Checkout. L
 4. Carrito: tres ejemplos y totales coherentes pero no dinámicos.
 5. Checkout: tres pasos visuales, sin solicitar ni almacenar tarjetas reales.
 
-## Entregables previstos
-- Cinco documentos HTML completos y enlazados.
+## Entregables
+- Cinco documentos HTML presentes e integrados. La presencia no implica que todas las comprobaciones de aceptación se hayan realizado.
 - Navbar y footer consistentes, catálogo de referencia compartido y tokens de diseño únicos.
 - Metadatos SEO y JSON-LD prudente donde aplique.
 - Evidencia de validación HTML/schema, pruebas responsive/teclado, Lighthouse/PageSpeed y `pagespeed-result.png` en la fase de implementación.

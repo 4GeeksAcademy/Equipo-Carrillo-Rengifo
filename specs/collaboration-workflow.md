@@ -6,12 +6,12 @@
 1. Crear rama documental `feature/project-foundation` desde `main`.
 2. Revisar reglas, memoria, sistema visual y specs; acordar decisiones y rutas.
 3. Abrir PR de fundaciones; ambos revisan y aprueban componentes/tokens compartidos.
-4. Integrar la fundación en `main` mediante el flujo normal de GitHub.
-5. Crear ramas independientes de vistas/funcionalidades desde `main` actualizado.
+4. La fundación y las cinco vistas están integradas actualmente en `main`; comprobar PRs y acuerdos antes de nuevos cambios.
+5. Crear ramas independientes de correcciones/funcionalidades desde `main` actualizado.
 6. Implementar solo la SPEC asignada y mantener commits descriptivos y frecuentes.
 7. Actualizar rama desde `main` antes de PR; resolver conflictos preservando cambios de ambos.
 8. Abrir PR, revisar HTML, diseño, rutas y accesibilidad; registrar pruebas y pendientes.
-9. Al integrar las cinco páginas, repetir validación de sitio completo y registrar PageSpeed.
+9. Tras integrar cambios, repetir validación del sitio completo y registrar PageSpeed; la integración previa de las cinco vistas no reemplaza este paso.
 
 ## Ejemplos de ramas
 - `feature/project-foundation`

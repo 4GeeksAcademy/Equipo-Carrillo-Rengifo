@@ -1,6 +1,6 @@
 # SPEC 05 — Checkout (`checkout.html`)
 
-> Ruta propuesta, pendiente de aprobación. Formulario estático; no incluir datos de tarjetas ni procesar pagos.
+> `checkout.html` está integrado en `main` como formulario/prototipo estático; no incluir datos de tarjetas ni procesar pagos. Esta SPEC no declara completados sus criterios de aceptación.
 
 ## Objetivo
 Mostrar la estructura y los campos habituales de un checkout en una experiencia explícitamente demostrativa.
