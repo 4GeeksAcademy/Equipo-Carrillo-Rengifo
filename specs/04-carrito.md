@@ -1,6 +1,6 @@
 # SPEC 04 — Carrito (`carrito.html`)
 
-> Ruta propuesta, pendiente de aprobación. Resumen estático: los importes son ejemplos y no corresponden a una orden real.
+> `carrito.html` está integrado en `main`. Resumen estático: los importes son ejemplos y no corresponden a una orden real. Esta SPEC no declara completados sus criterios de aceptación.
 
 ## Objetivo
 Mostrar un resumen comprensible de tres artículos y un ejemplo matemáticamente coherente de subtotal, impuestos y total.
@@ -11,7 +11,7 @@ Navbar, `main` con h1 y lista de tres líneas (artículo, unidad, cantidad, tota
 ## Componentes obligatorios
 Tres productos, miniatura, nombre, SKU, precio unitario, cantidad, total por línea; subtotal, impuestos, total; botón/enlace Comprar y navbar/footer.
 
-## Datos del ejemplo (requieren aprobación)
+## Datos del ejemplo (no oficiales; no representan datos comerciales ni fiscales)
 Para evitar presentar un tipo fiscal real como confirmado, ejemplo aritmético marcado “Importes ilustrativos para el prototipo; tasa de ejemplo 20%, no es cotización fiscal”: Camisa de lino Atelier `CAM-LIN-001` €89,00 x1 = €89,00; Pantalón recto Épure `PAN-REC-002` €120,00 x1 = €120,00; Bolso Le Marché `ACC-BOL-003` €31,00 x1 = €31,00. Subtotal neto €240,00 + impuesto ilustrativo €48,00 (20%) = total €288,00. Moneda/formato común según `shared-components.md`. Confirmar si importes deben ser netos o incluir impuestos antes de cambiar el copy.
 
 ## Elementos compartidos

@@ -1,9 +1,9 @@
 # Calidad y aceptación del proyecto
 
-> Criterios derivados del encargo/rúbrica indicada. Ninguna comprobación se declara realizada hasta registrar evidencia.
+> Criterios derivados del encargo/rúbrica indicada. Las cinco páginas están integradas en `main`; ninguna comprobación de aceptación se declara realizada hasta registrar evidencia verificable.
 
 ## Aceptación funcional y técnica
-- [ ] Cinco vistas completas y enlazadas: `index.html`, `catalogo.html`, `producto.html`, `carrito.html`, `checkout.html` (rutas propuestas pendientes de aprobación).
+- [ ] Revisar que las cinco vistas integradas (`index.html`, `catalogo.html`, `producto.html`, `carrito.html`, `checkout.html`) estén completas y enlazadas correctamente.
 - [ ] HTML5 semántico sin errores en W3C Nu Validator; un h1, metadatos, labels/alt y rutas coherentes.
 - [ ] Tailwind CSS v4 exclusivamente; estilos y tokens compartidos; sin framework ni JavaScript personalizado/dependencias prohibidas.
 - [ ] Navbar/footer uniformes; copy, rutas, cards, SKU, precio y componentes conforme a `shared-components.md`.

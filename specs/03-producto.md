@@ -1,6 +1,6 @@
 # SPEC 03 — Producto (`producto.html`)
 
-> Ruta propuesta, pendiente de aprobación. Producto de muestra; selección y carrito no ejecutan operación.
+> `producto.html` está integrado en `main`. Producto de muestra; selección y carrito no ejecutan operación. Esta SPEC no declara completados sus criterios de aceptación.
 
 ## Objetivo
 Describir con detalle un artículo y ofrecer una presentación clara de sus atributos y precio.

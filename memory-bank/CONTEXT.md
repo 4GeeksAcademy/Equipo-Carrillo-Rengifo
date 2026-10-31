@@ -1,12 +1,12 @@
 # Contexto del producto
 
-> Pendiente de aprobación. No tratar las propuestas como identidad corporativa confirmada.
+> La dirección visual está aprobada para el prototipo. No tratarla como identidad corporativa confirmada.
 
 ## Producto y público
 Prototipo académico de una tienda de moda para personas que buscan prendas contemporáneas con una experiencia de navegación clara y editorial. El briefing no concreta segmentos, edad, líneas de producto ni posicionamiento comercial; estos supuestos deberán confirmarse.
 
 ## Identidad conceptual
-Dirección de arte sugerida: moda francesa premium, elegante, minimalista y contemporánea; marfil cálido, grafito, borgoña y grises cálidos, fotografía editorial consistente y abundante espacio. El nombre de marca/logo oficial está pendiente. Usar un marcador claramente reemplazable (p. ej. “MAISON [NOMBRE]”) solo tras aprobación; nunca presentarlo como nombre real.
+Dirección de arte aprobada para el prototipo: moda francesa premium, elegante, minimalista y contemporánea; marfil cálido, grafito, borgoña y grises cálidos, fotografía editorial consistente y abundante espacio. El nombre de marca/logo oficial sigue pendiente. ATELIER y cualquier marca visual son provisionales y no deben presentarse como identidad real.
 
 ## Experiencia deseada
 Navegación sencilla entre cinco vistas, jerarquía editorial, fichas de producto comparables y controles comprensibles. La navegación es real mediante enlaces HTML. Búsqueda, filtros, carrito, cantidad y checkout se muestran como prototipo y no realizan operaciones.

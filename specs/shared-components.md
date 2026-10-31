@@ -1,15 +1,15 @@
 # Contrato de componentes, contenido y recursos compartidos
 
-> Propuesta pendiente de aprobación. Estos contratos deben aprobarse antes de desarrollar páginas en paralelo.
+> Contrato de referencia para las cinco vistas integradas en `main`. Las páginas existentes deben mantenerse coherentes con estos patrones; cambios adicionales siguen el flujo de revisión del equipo.
 
 ## Fuente visual única
-Los tokens están en `memory-bank/DESIGN-SYSTEM.md`. En implementación, se propone `styles.css` compartido con variables y reglas mínimas. Las páginas consumen variables mediante utilidades Tailwind; no copian hexadecimales ni crean variantes locales. Tailwind CDN v4 procede del método ya documentado por `README.es.md`. Antes de implementar todas las vistas, validar en una página descartable que el CDN resuelve las utilidades de variables CSS propuestas.
+Los tokens están descritos en `memory-bank/DESIGN-SYSTEM.md`. Las páginas integradas consumen variables mediante utilidades Tailwind y cargan Tailwind CDN v4. No se encontró una definición común de las variables `--color-*`; una hoja `styles.css` no es requisito explícito del proyecto. Mantener uso coherente de clases utility y breakpoints responsive; no añadir build tooling sin acuerdo.
 
 ## Reutilización estática
 No existen imports, componentes, includes ni plantillas dinámicas en este stack. `shared-components.md` es el fragmento canónico de referencia: mantener bloques HTML de navbar y footer idénticos mediante copia controlada, hacer cambios en PR específica, revisar diff entre las cinco páginas tras propagar el cambio y ejecutar búsqueda de rutas/textos/tokens. No declarar una sincronización automática inexistente. Una revisión del equipo verifica el contrato.
 
 ## 1. Navbar canónica
-- Wordmark provisional idéntico en todas las vistas: **“ATELIER — MARQUE À CONFIRMER”** únicamente como placeholder aprobado; no es nombre real. Reemplazar una sola vez por nombre aprobado en cada archivo. Logotipo enlaza a `index.html` y tiene nombre accesible.
+- Wordmark provisional idéntico en todas las vistas: **“ATELIER — MARQUE À CONFIRMER”** como placeholder del prototipo; no es nombre real. Reemplazarlo solo cuando se confirme una identidad. Logotipo enlaza a `index.html` y tiene nombre accesible.
 - Fondo `--color-canvas`; texto `--color-ink`; borde inferior `--color-line`; altura de referencia 80 px desktop y 64 px móvil; mismo padding del contenedor, baseline y tipografía en todas las páginas.
 - Desktop: marca a la izquierda, búsqueda centrada (campo visible pero deshabilitado, con label y nota “Búsqueda de demostración; no disponible”), navegación principal con los enlaces Inicio, Catálogo, Producto, Carrito y Checkout, y Cuenta/Carrito a la derecha. Carrito aparece intencionalmente tanto en la navegación principal como en el acceso superior derecho. No existe vista de cuenta ni operación de carrito: mostrar “Cuenta (prototipo)” como texto no interactivo y enlazar Carrito únicamente a `carrito.html`; no inventar destinos ni simular acciones.
 - Rutas de vistas propuestas y consistentes: Home `index.html`, Catálogo `catalogo.html`, Producto `producto.html`, Carrito `carrito.html`, Checkout `checkout.html`. Cuenta no tiene vista: no crear ruta ficticia.
